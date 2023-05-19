@@ -1,5 +1,5 @@
 # Dockerfile development version
-FROM ruby:3.1-bullseye AS rails-toolbox
+FROM ruby:3.1-bullseye AS default_rails_app
 
 # Install yarn
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg -o /root/yarn-pubkey.gpg && apt-key add /root/yarn-pubkey.gpg
